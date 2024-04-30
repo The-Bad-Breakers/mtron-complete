@@ -1,0 +1,46 @@
+death.attack.heat=%s was boiled alive (and fried!)
+death.attack.chemical=%s had a chemical accident. woopsies!
+death.attack.electric=%s was electrocuted by giant cartoon electric bolt
+death.attack.radiation=%s glowol with joj now
+death.attack.turbine=%s put their PINGAS into a turbine
+death.attack.explosion=%s exploded. HA HA! pingas.
+death.attack.heat.player=%s was boiled (it doesnt matter if its) alive by %s
+
+death.attack.crowbar=%s lost half a pingas to %s
+death.attack.wrench_iv=%s had a Scrub Monkey Wrench 3rd Class thrown into their plans by %s
+
+metaitem.credit.copper.name=Copper Greg Dollar
+metaitem.credit.copper.tooltip=0.125 Greg Dollars
+metaitem.credit.cupronickel.name=Cupronickel Greg Dollar
+metaitem.credit.cupronickel.tooltip=1 Greg Dollar
+metaitem.credit.silver.name=Silver Greg Dollar
+metaitem.credit.silver.tooltip=8 Greg Dollars
+metaitem.credit.gold.name=Gold Greg Dollar
+metaitem.credit.gold.tooltip=64 Greg Dollars
+metaitem.credit.platinum.name=Platinum Greg Dollar
+metaitem.credit.platinum.tooltip=512 Greg Dollars
+metaitem.credit.osmium.name=Osmium Greg Dollar
+metaitem.credit.osmium.tooltip=4096 Greg Dollars
+metaitem.credit.naquadah.name=Naquadah Greg Dollar
+metaitem.credit.naquadah.tooltip=32768 Greg Dollars
+metaitem.credit.neutronium.name=Neutronium Greg Dollar
+metaitem.credit.neutronium.tooltip=262144 Greg Dollars
+
+metaitem.coin.gold.ancient.tooltip=Found in the depths
+metaitem.coin.doge.name=Spigottan Coin
+metaitem.coin.doge.tooltip=famous of
+metaitem.coin.chocolate.name=Female Chocolate Coin
+metaitem.coin.chocolate.tooltip=Wrapped in Wokeness.
+
+gregtech.machine.block_breaker.lv.name=Basic Bad Breaker
+gregtech.machine.block_breaker.mv.name=Advanced Bad Breaker
+gregtech.machine.block_breaker.hv.name=Advanced Bad Breaker II
+gregtech.machine.block_breaker.ev.name=Advanced Bad Breaker III
+
+gregtech.terminal.app_name.maze=Gwonam's Escape
+
+terminal.ore_prospector.description= dont use this one its break
+
+terminal.maze.title=Gwonam's Escape
+terminal.maze.death.1=Oh no! You were eaten by Dr. Pingas!
+terminal.maze.death.2=You got OWNED and on did %s mazes ha ha ha
