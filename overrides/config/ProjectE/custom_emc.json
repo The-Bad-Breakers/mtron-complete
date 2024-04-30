@@ -1,0 +1,52 @@
+{
+  "entries": [
+    {
+      "item": "projecte:item.pe_matter|0",
+      "emc": 82953
+    },
+    {
+      "item": "projecte:item.pe_matter|1",
+      "emc": 1327248
+    },
+    {
+      "item": "projecte:item.pe_fuel|1",
+      "emc": 2048
+    },
+    {
+      "item": "projecte:item.pe_fuel|2",
+      "emc": 8192
+    },
+    {
+      "item": "projecte:item.pe_philosophers_stone|0",
+      "emc": 73728
+    },
+    {
+      "item": "projecte:condenser_mk1|0",
+      "emc": 331812
+    },
+    {
+      "item": "projecte:collector_mk1|0",
+      "emc": 1660596
+    },
+    {
+      "item": "projecte:item.pe_covalence_dust|0",
+      "emc": 64
+    },
+    {
+      "item": "projecte:item.pe_covalence_dust|1",
+      "emc": 557
+    },
+    {
+      "item": "projecte:item.pe_covalence_dust|2",
+      "emc": 1100
+    },
+    {
+      "item": "projecte:transmutation_table|0",
+      "emc": 340004
+    },
+    {
+      "item": "projecte:relay_mk1|0",
+      "emc": 1659316
+    }
+  ]
+}

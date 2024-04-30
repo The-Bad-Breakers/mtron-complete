@@ -1,0 +1,23 @@
+container.nukeBoy=My Boy
+container.nukeMike=Ivy Finger
+container.nukeSolinium=The Baby Blue
+
+tile.nuke_boy.name=My Boy
+tile.nuke_mike.name=Ivy Finger
+tile.nuke_solinium.name=The Baby Blue
+
+tile.crashed_bomb.name=The Dud
+
+item.boy_kit.name=My Boy Kit
+item.mike_kit.name=Ivy Finger Kit
+
+death.attack.blacklung=%1$s gave their life to the coal mines.
+death.attack.cheater=%1$s's intestines turned into oats. Yummy!!
+death.attack.cloud=%1$s melted like a pingas in the but..... ha ha ha ha
+death.attack.euthanizedSelf=%1$s euthanized themself, everyone say good job.
+death.attack.suicide=%1$s made a Chuck McGill reference.
+
+desc.conveyor.boxer.modeR=Pack when a redstone signal is turned on
+desc.flamepony=Yellow horse Fucks blue horse, that's a Real Proven Fact!
+
+item.can_redbomb.name='Red Matter Bomb' Energy Drink

@@ -1,0 +1,17 @@
+<galaxy>
+    <star name="λ Regisaudax A" temp="250" x="0" y="0" numPlanets="7" numGasGiants="1">
+		<star name="λ Regisaudax B" temp="200" separation="15.0" />
+		
+        <planet name="Mobius"> <!--I',m working on this -->
+            <fogColor>1,1,1</fogColor>
+            <skyColor>0,0,1</skyColor>
+            <atmosphereDensity>100</atmosphereDensity>
+            <gravitationalMultiplier>100</gravitationalMultiplier>
+            <orbitalDistance>1000</orbitalDistance>
+            <orbitalTheta>180</orbitalTheta>
+            <rotationalPeriod>24000</rotationalPeriod>
+            <biomeIds>0</biomeIds>
+        </planet>
+		
+    </star>
+</galaxy>

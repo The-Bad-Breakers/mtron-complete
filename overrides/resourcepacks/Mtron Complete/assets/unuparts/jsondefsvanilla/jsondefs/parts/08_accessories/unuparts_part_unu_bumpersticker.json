@@ -1,0 +1,64 @@
+{
+	"definitions": [//Dyes: Black=0 Red =1 Green=2 Brown=3 Blue=4 Purple=5 UNU=6 Silver=7 Grey=8 Pink=9 Lime=10 Yellow=11 Light Blue=12 Magenta=13 Orange=14 White=15
+		{
+			"name": "My other car is a Flansmod Jeep Bumper Sticker",
+			"description": "Suggested by Nianor",
+			"subName": "_flanjeep",
+			//"extraMaterialLists": [["minecraft:dye:10:1", "minecraft:dye:2:1"],["minecraft:lime_dye:1", "minecraft:cactus_green:1"]]
+			"extraMaterialLists": [["minecraft:dye:10:1", "minecraft:dye:2:1"],["minecraft:lime_dye:1", "minecraft:cactus_green:1"]]
+		},
+		{
+			"name": "HERESY Bumper Sticker",
+			"description": "Submitted by TheCactus27",
+			"subName": "_heresy",
+			//"extraMaterialLists": [["minecraft:dye:0:1"],["minecraft:ink_sac:1"]]
+			"extraMaterialLists": [["minecraft:dye:0:1"],["minecraft:ink_sac:1"]]
+		},
+		{
+			"name": "IngUNUity Bumper Sticker",
+			"subName": "_ingunuity",
+			//"extraMaterialLists": [["minecraft:dye:6:1"],["minecraft:cyan_dye:1"]]
+			"extraMaterialLists": [["minecraft:dye:6:1"],["minecraft:cyan_dye:1"]]
+		},
+		{
+			"name": "Made with SMP Toolbox 2.0 Bumper Sticker",
+			"description": "Submitted by fsendventd",
+			"subName": "_smptoolbox",
+			//"extraMaterialLists": [["minecraft:dye:0:1"],["minecraft:ink_sac:1"]]
+			"extraMaterialLists": [["minecraft:dye:0:1"],["minecraft:ink_sac:1"]]
+		},
+		{
+			"name": "Trio Owner's Club Bumper Sticker",
+			"description": "Submitted by Connie",
+			"subName": "_trio",
+			//"extraMaterialLists": [["minecraft:dye:14:1"],["minecraft:orange_dye:1"]]
+			"extraMaterialLists": [["minecraft:dye:14:1"],["minecraft:orange_dye:1"]]
+		},
+		{
+			"name": "Breaking Bad Bumper Sticker",
+			"subName": "_unusable",
+			//"extraMaterialLists": [["minecraft:dye:6:1"],["minecraft:cyan_dye:1"]]
+			"extraMaterialLists": [["minecraft:dye:6:1"],["minecraft:cyan_dye:1"]]
+		},
+		{
+			"name": "I <3 Violence Bumper Sticker",
+			"description": "Submitted by TheCactus27",
+			"subName": "_violence",
+			//"extraMaterialLists": [["minecraft:dye:0:1"],["minecraft:ink_sac:1"]]
+			"extraMaterialLists": [["minecraft:dye:0:1"],["minecraft:ink_sac:1"]]
+		}
+	],
+
+	"general": {
+		"type": "generic_bumpersticker",
+		"disableMirroring": true,
+		"stackSize": 4,
+		//"materialLists": [["minecraft:paper:0:1"],["minecraft:paper:1"]]
+		"materialLists": [["minecraft:paper:0:1"],["minecraft:paper:1"]]
+	},
+	
+	"generic": {
+		"width": 0.125,
+		"height": 0.125
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"definitions": [//Dyes: Black=0 Red =1 Green=2 Brown=3 Blue=4 Purple=5 UNU=6 Silver=7 Grey=8 Pink=9 Lime=10 Yellow=11 Light Blue=12 Magenta=13 Orange=14 White=15
+		{
+			"name": "Bus Poster (UNU Space Fruit)",
+			"subName": "_spacefruit",
+			//"extraMaterialLists": [["minecraft:dye:6:1"],["minecraft:cyan_dye:1"]]
+			"extraMaterialLists": [["minecraft:dye:6:1"],["minecraft:cyan_dye:1"]]
+		}
+	],
+
+	"general": {
+		"type": "generic_busad_poster",
+		"disableMirroring": true,
+		"stackSize": 4,
+		//"materialLists": [["immersiveengineering:metal:31:1"],["immersiveengineering:plate_aluminum:1"]]
+		"materialLists": [["minecraft:iron_ingot:0:2"],["minecraft:iron_ingot:2"]]
+	},
+	
+	"generic": {
+		"width": 0.25,
+		"height": 0.25
+	}
+}

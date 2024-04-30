@@ -1,0 +1,15 @@
+tile.engineersdecor.sign_caution.name=Caution Sign
+tile.engineersdecor.sign_decor.name=Sign Plate
+tile.engineersdecor.sign_hotwire.name=Electrical Hazard Sign
+tile.engineersdecor.sign_mindstep.name="Mind The Step" Sign
+tile.engineersdecor.sign_danger.name=Extreme Danger Sign
+tile.engineersdecor.sign_defense.name=Defense System Sign
+tile.engineersdecor.sign_factoryarea.name=Factory Area Sign
+tile.engineersdecor.sign_exit.name=Exit Sign
+tile.engineersdecor.sign_firehazard.name=Fire Hazard Sign
+tile.engineersdecor.sign_frost.name=Frost Hazard Sign
+tile.engineersdecor.sign_hotsurface.name=Hot Surface Hazard Sign
+tile.engineersdecor.sign_laser.name=Laser Hazard Sign
+tile.engineersdecor.sign_magichazard.name=Magical Hazard Sign
+tile.engineersdecor.sign_magneticfield.name=Strong Magnetic Field Sign
+tile.engineersdecor.sign_radioactive.name=Radioactive Hazard Sign
