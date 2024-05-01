@@ -42,28 +42,6 @@ recipes.addShaped(<energyconverters:energy_producer_eu:4>,
 recipes.addShapeless(<mcwtrpdoors:oak_classic_trapdoor>, [<minecraft:trapdoor>]);
 recipes.addShapeless(<minecraft:trapdoor>, [<mcwtrpdoors:oak_classic_trapdoor>]);
 
-// Immersive Intelligence is one of the greatest mod
-
-recipes.addShaped(<immersiveintelligence:light_engineer_armor_boots>,
-[[<immersiveengineering:material:9>, <immersiveengineering:tool>, <immersiveengineering:material:9>],
-[null, <immersiveengineering:steel_armor_feet>, null],
-[<immersiveengineering:material:9>, <minecraft:leather_boots>, <immersiveengineering:material:9>]]);
-
-recipes.addShaped(<immersiveintelligence:light_engineer_armor_leggings>,
-[[<immersiveengineering:material:9>, <immersiveengineering:tool>, <immersiveengineering:material:9>],
-[null, <immersiveengineering:steel_armor_legs>, null],
-[<immersiveengineering:material:9>, <minecraft:leather_leggings>, <immersiveengineering:material:9>]]);
-
-recipes.addShaped(<immersiveintelligence:light_engineer_armor_chestplate>,
-[[<immersiveengineering:material:9>, <immersiveengineering:tool>, <immersiveengineering:material:9>],
-[null, <immersiveengineering:steel_armor_chest>, null],
-[<immersiveengineering:material:9>, <minecraft:leather_chestplate>, <immersiveengineering:material:9>]]);
-
-recipes.addShaped(<immersiveintelligence:light_engineer_armor_helmet>,
-[[<immersiveengineering:material:9>, <immersiveengineering:tool>, <immersiveengineering:material:9>],
-[null, <immersiveengineering:steel_armor_head>, null],
-[<immersiveengineering:material:9>, <minecraft:leather_helmet>, <immersiveengineering:material:9>]]);
-
 // Ender Zoo Things ..... whatever
 
 recipes.addShapeless(<enderzoo:confusingdust>, [<enderio:item_material:61>]);
@@ -74,5 +52,5 @@ recipes.addShapeless(<enderio:item_material:62>, [<enderzoo:enderfragment>]);
 
 // refined iron stuff
 
-recipes.remove(<ic2:itemmisc:53>);
-furnace.addRecipe(<ore:ingotWroughtIron>, <ic2:itemmisc:53>);
+furnace.remove(<ic2:itemmisc:53>, <minecraft:iron_ingot>);
+furnace.addRecipe(<ic2:itemmisc:53>, <gregtech:meta_ingot:335>);

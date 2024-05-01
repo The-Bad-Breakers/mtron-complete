@@ -61,9 +61,9 @@ recipes.addShaped(<mekanism:basicblock:8>, [
 [<ore:screwOsmium>, <ore:circuitHv>, <ore:screwOsmium>]]);
 
 recipes.addShaped(<mekanism:teleportationcore>, [
-[<appliedenergistics2:material:47>, <projecte:item.pe_matter:1>, <appliedenergistics2:material:47>],
-[<projecte:item.pe_matter:1>, <mekanism:atomicalloy>, <projecte:item.pe_matter:1>],
-[<appliedenergistics2:material:47>, <projecte:item.pe_matter:1>, <appliedenergistics2:material:47>]]);
+[<mekanism:atomicalloy>, <projecte:item.pe_matter:1>, <mekanism:atomicalloy>],
+[<projecte:item.pe_matter:1>, <hbm:singularity>, <projecte:item.pe_matter:1>],
+[<mekanism:atomicalloy>, <projecte:item.pe_matter:1>, <mekanism:atomicalloy>]]);
 
 
 //
@@ -72,6 +72,12 @@ recipes.addShaped(<mekanism:teleportationcore>, [
 
 recipes.remove(<deepmoblearning:soot_covered_plate>);
 recipes.remove(<deepmoblearning:machine_casing>);
+recipes.remove(<deepmoblearning:deep_learner>);
+recipes.remove(<deepmoblearning:data_model_blank>);
+recipes.remove(<deepmoblearning:simulation_chamber>);
+recipes.remove(<deepmoblearning:extraction_chamber>);
+recipes.remove(<deepmoblearning:trial_key>);
+recipes.remove(<deepmoblearning:trial_keystone>);
 
 recipes.addShaped(<deepmoblearning:soot_covered_plate>, [
 [<deepmoblearning:soot_covered_redstone>, <ore:stickUltimet>, <deepmoblearning:soot_covered_redstone>],
@@ -79,29 +85,55 @@ recipes.addShaped(<deepmoblearning:soot_covered_plate>, [
 [<deepmoblearning:soot_covered_redstone>, <ore:stickUltimet>, <deepmoblearning:soot_covered_redstone>]]);
 
 recipes.addShaped(<deepmoblearning:machine_casing>, [
-[<deepmoblearning:soot_covered_plate>, <ore:circuitEv>, <ore:wireGtSingleSamariumIronArsenicOxide>],
+[<deepmoblearning:soot_covered_plate>, <ore:circuitEv>, <deepmoblearning:soot_covered_plate>],
 [<ore:circuitEv>, <gregtech:machine:989>, <ore:circuitEv>],
 [<deepmoblearning:soot_covered_plate>, <ore:circuitEv>, <deepmoblearning:soot_covered_plate>]]);
+
+recipes.addShaped(<deepmoblearning:deep_learner>, [
+[<deepmoblearning:soot_covered_plate>, <ore:circuitEv>, <deepmoblearning:soot_covered_plate>],
+[<gregtech:meta_item_1:261>, <gregtech:meta_item_1:469>, <gregtech:meta_item_1:261>],
+[<deepmoblearning:soot_covered_plate>, <thaumcraft:brain>, <deepmoblearning:soot_covered_plate>]]);
+
+recipes.addShaped(<deepmoblearning:data_model_blank>, [
+[<deepmoblearning:soot_covered_redstone>, <deepmoblearning:soot_covered_redstone>, null],
+[<gregtech:meta_item_1:261>, <ore:circuitEv>, <ore:boltGold>],
+[<gregtech:meta_item_1:385>, <gregtech:meta_item_1:385>, <ore:boltGold>]]);
 
 recipes.addShaped(<deepmoblearning:simulation_chamber>, [
 [<ore:wireGtSingleUraniumTriplatinum>, <gregtech:meta_item_1:282>, <ore:wireGtSingleUraniumTriplatinum>],
 [<gregtech:meta_item_1:261>, <deepmoblearning:machine_casing>, <gregtech:meta_item_1:261>],
 [<ore:wireGtSingleUraniumTriplatinum>, <gregtech:meta_item_1:742>, <ore:wireGtSingleUraniumTriplatinum>]]);
 
-recipes.addShaped(<deepmoblearning:loot_fabricator>, [
-[<ore:wireGtSingleUraniumTriplatinum>, <gregtech:meta_item_1:282>, <ore:wireGtSingleUraniumTriplatinum>],
-[<gregtech:meta_item_1:261>, <deepmoblearning:machine_casing>, <gregtech:meta_item_1:261>],
-[<ore:wireGtSingleUraniumTriplatinum>, <ore:circuitIv>, <ore:wireGtSingleUraniumTriplatinum>]]);
+recipes.addShaped(<deepmoblearning:extraction_chamber>, [
+[<ore:wireGtSingleUraniumTriplatinum>, <mekanism:teleportationcore>, <ore:wireGtSingleUraniumTriplatinum>],
+[<ore:circuitIv>, <deepmoblearning:machine_casing>, <ore:circuitIv>],
+[<ore:wireGtSingleUraniumTriplatinum>, <thaumcraft:mechanism_complex>, <ore:wireGtSingleUraniumTriplatinum>]]);
+
+recipes.addShaped(<deepmoblearning:trial_key>, [
+[null, null, null],
+[<gregtech:meta_item_1:281>, <ore:plateDiamond>, <ore:plateDiamond>],
+[null, <ore:boltIron>, <ore:boltIron>]]);
+
+recipes.addShaped(<deepmoblearning:trial_keystone>, [
+[null, <deepmoblearning:trial_key>, null],
+[<gregtech:meta_item_1:205>, <deepmoblearning:machine_casing>, <gregtech:meta_item_1:205>],
+[<botania:conjurationcatalyst>, <ore:circuitIv>, <botania:conjurationcatalyst>]]);
 
 //
 // RFTools
 //
 
+recipes.remove(<rftools:machine_base>);
 recipes.remove(<rftools:machine_frame>);
 recipes.remove(<rftools:matter_receiver>);
 recipes.remove(<rftools:matter_transmitter>);
 recipes.remove(<rftools:dialing_device>);
 recipes.remove(<rftoolsdim:dimension_builder>);
+
+recipes.addShaped(<rftools:machine_base>, [
+[null, null, null,],
+[<ore:wireGtSingleGold>, <ore:circuitLv>, <ore:wireGtSingleGold>],
+[<ore:plateWroughtIron>, <ore:plateWroughtIron>, <ore:plateWroughtIron>]]);
 
 recipes.addShaped(<rftools:machine_frame>, [
 [<ore:wireGtSingleSamariumIronArsenicOxide>, <gregtech:meta_item_1:262>, <ore:wireGtSingleSamariumIronArsenicOxide>],
@@ -119,7 +151,7 @@ recipes.addShaped(<rftools:matter_receiver>, [
 [<ore:wireFineRuridit>, <computercraft:advanced_modem>, <ore:wireFineRuridit>]]);
 
 recipes.addShaped(<rftools:dialing_device>, [
-[<ore:cableGtDoublePlatinum>, <cyberware:beacon>, <ore:cableGtDoublePlatinum>],
+[<ore:cableGtDoublePlatinum>, <cyberware:beacon_large>, <ore:cableGtDoublePlatinum>],
 [<computercraft:peripheral:1>, <rftools:machine_frame>, <computercraft:peripheral:1>],
 [<ore:cableGtDoublePlatinum>, <ore:circuitIv>, <ore:cableGtDoublePlatinum>]]);
 
@@ -132,7 +164,35 @@ recipes.addShaped(<rftoolsdim:dimension_builder>, [
 // Misc Things
 //
 
+// Redstone Arsenal
+
+recipes.remove(<redstonearsenal:material:224>);
+recipes.remove(<redstonearsenal:material:193>);
+recipes.remove(<redstonearsenal:tool.bow_flux>);
+recipes.remove(<redstonearsenal:util.quiver_flux>);
+
+recipes.addShaped(<redstonearsenal:material:224>, [
+[<ore:gemCrystalFlux>, <ore:plateElectrumFlux>, <ore:gemCrystalFlux>],
+[<ore:plateElectrumFlux>, <gregtech:meta_item_1:741>, <ore:plateElectrumFlux>],
+[<ore:gemCrystalFlux>, <ore:plateElectrumFlux>, <ore:gemCrystalFlux>]]);
+
+recipes.addShaped(<redstonearsenal:material:193>, [
+[null, <redstonearsenal:material:192>, <ore:gemCrystalFlux>],
+[<redstonearsenal:material:192>, <ore:stickLongTungstenSteel>, <redstonearsenal:material:192>],
+[<ore:gemCrystalFlux>, <redstonearsenal:material:192>, null]]);
+
+recipes.addShaped(<redstonearsenal:tool.bow_flux>, [
+[null, <redstonearsenal:material:193>, <ore:bRedString>],
+[<redstonearsenal:material:193>, <gregtech:meta_item_1:206>, <ore:bRedString>],
+[null, <redstonearsenal:material:193>, <ore:bRedString>]]);
+
+recipes.addShaped(<redstonearsenal:util.quiver_flux>, [
+[<hbm:coil_magnetized_tungsten>, <redstonearsenal:material:224>, null],
+[<hbm:coil_magnetized_tungsten>, <redstonearsenal:material:224>, <immersiveengineering:wirecoil:3>],
+[<gregtech:meta_item_1:206>, <redstonearsenal:material:224>, <immersiveengineering:wirecoil:3>]]);
+
 // ComputerCraft
+
 recipes.remove(<computercraft:peripheral:1>);
 recipes.remove(<computercraft:advanced_modem>);
 
