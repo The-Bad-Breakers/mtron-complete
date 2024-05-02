@@ -54,3 +54,4 @@ recipes.addShapeless(<enderio:item_material:62>, [<enderzoo:enderfragment>]);
 
 furnace.remove(<ic2:itemmisc:53>, <minecraft:iron_ingot>);
 furnace.addRecipe(<ic2:itemmisc:53>, <gregtech:meta_ingot:335>);
+furnace.addRecipe(<gregtech:meta_ingot:335>, <minecraft:iron_ingot>);
