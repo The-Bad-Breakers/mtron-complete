@@ -161,7 +161,7 @@ chem.SAS3=Schraderbraumium Trisulfide Production
 chem.SCHRABIDATE=Ferric Schradibate Production
 chem.SCHRABIDIC=Schradibic Acid Mixing
 
-item.boy_kit.name=My Boy Kit
-item.mike_kit.name=Ivy Finger Kit
-
 tile.struct_soyuz_core.name=Mtur Launcher Core Component
+
+item.can_redbomb.name='Red Matter Bomb' Energy Drink
+item.syringe_poison.name=The Asdas Special

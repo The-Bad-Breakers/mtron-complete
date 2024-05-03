@@ -10,9 +10,5 @@
 
 <openblocks:xp_shower>.addTooltip("Do not place on top or bottom of tank!");
 
-<immersiveintelligence:machinegun>.addTooltip("Can and will completely stop the game, most likely from a specific bullet. Use at own risk!");
-<immersiveintelligence:submachinegun>.addTooltip("Can and will completely stop the game, most likely from a specific bullet. Use at own risk!");
-
-recipes.remove(<questbook:itemquestbook>);
-recipes.addShapeless(<questbook:itemquestbook>, [<minecraft:book>,<ore:gearGold>]);
-<questbook:itemquestbook>.addTooltip(format.darkRed("The most amount of fun you could possibly have while playing an app!"));
+<immersiveintelligence:machinegun>.addTooltip("Can completely stop the game, most likely from a specific bullet. Use at own risk!");
+<immersiveintelligence:submachinegun>.addTooltip("Can completely stop the game, most likely from a specific bullet. Use at own risk!");

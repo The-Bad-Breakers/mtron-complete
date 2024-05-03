@@ -160,9 +160,9 @@ assembler.recipeBuilder()
 
 assembly_line.recipeBuilder()
     .inputs([
-    <ore:frameGtNaquadahAlloy>, <ore:plateDoubleTrinaquadalloy> * 8, <ore:screwNeutronium> * 16, <metaitem:tool.datamodule>,
-    <ore:circuitUhv> * 8,  <gregtech:meta_item_1:209> * 4, <gregtech:meta_item_1:224> * 4, <gregtech:meta_item_1:239> * 4,
-    <ore:gaiaIngot> * 16, <thaumcraft:metal_alchemical_advanced> * 16, <projecte:item.pe_klein_star:5>, <projecte:item.pe_klein_star:5>])
+    <ore:frameGtNaquadahAlloy>, <ore:plateDoubleTrinaquadalloy> * 8, <ore:screwNeutronium> * 8, <metaitem:tool.datamodule>,
+    <ore:circuitUhv> * 8,  <gregtech:meta_item_1:209> * 8, <gregtech:meta_item_1:224> * 8, <gregtech:meta_item_1:239> * 8,
+    <ore:gaiaIngot> * 32, <thaumcraft:metal_alchemical_advanced> * 32, <projecte:item.pe_klein_star:5>, <projecte:item.pe_klein_star:5>])
     .fluidInputs([
     <liquid:naquadria>*1152,
     <liquid:flux_goo>*1152,
@@ -170,5 +170,5 @@ assembly_line.recipeBuilder()
     <liquid:molten_reinforced_pink_slime> * 1152])
     .outputs([<projecte:transmutation_table>])
     .duration(2400) // 2 whole minutes because I'm Evil And I Hate You
-    .EUt(128000)
+    .EUt(256000)
     .buildAndRegister();
