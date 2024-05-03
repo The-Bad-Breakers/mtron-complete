@@ -4,8 +4,6 @@ import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;
 import crafttweaker.damage.IDamageSource;
 
-// create to items
-
 var pingas = VanillaFactory.createItem("pingas");
 pingas.register();
 
@@ -28,3 +26,6 @@ bag_greg_meth.onItemFoodEaten = function(stack, world, player)
 	player.attackEntityFrom(<damageSource:OUT_OF_WORLD>, 1216);
 };
 bag_greg_meth.register();
+
+var villainous_bounty_skull = VanillaFactory.createItem("villainous_bounty_skull");
+villainous_bounty_skull.register();

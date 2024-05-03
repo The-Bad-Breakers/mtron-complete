@@ -1,3 +1,5 @@
+import mods.gregtech.recipe.RecipeMap;
+
 // also tooltips becausee to stupid
 
 <contenttweaker:bag_meth>.addTooltip("We did it Jesse...");
@@ -24,7 +26,16 @@ recipes.addShaped(<contenttweaker:greg_meth>, [
 [<ore:dustNeutronium>, <ore:dustCrystalMeth>, <ore:dustNeutronium>],
 [<ore:dustNeutronium>, <ore:dustNeutronium>, <ore:dustNeutronium>]]);
 
-recipes.addShaped(<contenttweaker:bag_greg_meth> * 4, [
+recipes.addShaped(<contenttweaker:bag_greg_meth>, [
 [<ore:foilPlastic>, <ore:foilPlastic>, <ore:foilPlastic>],
 [<ore:foilPlastic>, <contenttweaker:greg_meth>, <ore:foilPlastic>],
 [<ore:foilPlastic>, <ore:foilPlastic>, <ore:foilPlastic>]]);
+
+<recipemap:chemical_bath>.recipeBuilder()
+    .inputs([<ore:skullWitherSkeleton>])
+	.fluidInputs([
+    <liquid:gold> * 144])
+    .outputs([<contenttweaker:villainous_bounty_skull>])
+    .duration(300)
+    .EUt(512)
+    .buildAndRegister();

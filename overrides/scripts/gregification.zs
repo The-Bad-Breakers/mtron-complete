@@ -206,6 +206,30 @@ recipes.addShaped(<computercraft:advanced_modem>, [
 [<ore:wireFinePlatinum>, <ore:circuitHv>, <ore:wireFinePlatinum>],
 [<ore:platePolytetrafluoroethylene>, <computercraft:peripheral:1>, <ore:platePolytetrafluoroethylene>]]);
 
+// Advanced Rocketry / Libvulpes
+
+recipes.remove(<libvulpes:structuremachine>);
+recipes.remove(<libvulpes:advstructuremachine>);
+
+recipes.addShaped(<libvulpes:structuremachine>, [
+[<ore:screwSteel>, <ore:plateDoubleAluminium>, <ore:screwSteel>],
+[<ore:plateDoubleAluminium>, <ore:frameGtSteel>, <ore:plateDoubleAluminium>],
+[<ore:screwSteel>, <ore:plateDoubleAluminium>, <ore:screwSteel>]]);
+
+recipes.addShaped(<libvulpes:advstructuremachine>, [
+[<ore:screwTitanium>, <ore:plateTitaniumCarbide>, <ore:screwTitanium>],
+[<ore:plateTitaniumCarbide>, <gregtech:machine_casing:4>, <ore:plateTitaniumCarbide>],
+[<ore:screwTitanium>, <ore:plateTitaniumCarbide>, <ore:screwTitanium>]]);
+
+// Enchanting Plus
+
+recipes.remove(<eplus:advanced_table>);
+
+recipes.addShaped(<eplus:advanced_table>, [
+[<projecte:item.pe_matter:1>, <contenttweaker:pingas>, <projecte:item.pe_matter:1>],
+[<gregtech:meta_item_1:262>, <minecraft:enchanting_table>, <gregtech:meta_item_1:262>],
+[<projecte:item.pe_matter:1>, <extrautils2:simpledecorative:2>, <projecte:item.pe_matter:1>]]);
+
 //
 // These ones get KILLED FOREVER
 //
