@@ -11,14 +11,9 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Mtron Complete",
-  "version": "2.3_dev",
+  "version": "2.3",
   "author": "",
   "files": [
-    {
-      "projectID": 423145,
-      "fileID": 4434176,
-      "required": true
-    },
     {
       "projectID": 271384,
       "fileID": 2920434,
@@ -217,11 +212,6 @@
     {
       "projectID": 229002,
       "fileID": 2735197,
-      "required": true
-    },
-    {
-      "projectID": 254144,
-      "fileID": 2507277,
       "required": true
     },
     {
@@ -875,6 +865,11 @@
       "required": true
     },
     {
+      "projectID": 237065,
+      "fileID": 3331364,
+      "required": true
+    },
+    {
       "projectID": 223908,
       "fileID": 3953392,
       "required": true
@@ -1007,11 +1002,6 @@
     {
       "projectID": 371784,
       "fileID": 4975229,
-      "required": true
-    },
-    {
-      "projectID": 289479,
-      "fileID": 2854400,
       "required": true
     },
     {
