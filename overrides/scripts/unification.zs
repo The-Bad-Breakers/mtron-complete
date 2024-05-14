@@ -22,6 +22,7 @@ for form in forms {
 	val aluminum = oreDict[form ~ "Aluminum"];
 	val aluminium = oreDict[form ~ "Aluminium"];
 	
+	recipes.replaceAllOccurences(aluminum, aluminium);
 	for item in aluminum.items
 	{
 		recipes.replaceAllOccurences(item, aluminium);
@@ -33,6 +34,7 @@ for form in forms {
 	val constantan = oreDict[form ~ "Constantan"];
 	val cupronickel = oreDict[form ~ "Cupronickel"];
 	
+	recipes.replaceAllOccurences(constantan, cupronickel);
 	for item in constantan.items
 	{
 		recipes.replaceAllOccurences(item, cupronickel );
