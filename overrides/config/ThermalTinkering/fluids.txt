@@ -908,9 +908,9 @@ colloid                                           ([no block])                  
 nitan                                             ([no block])                                                                     = NITAN© 100 Octane Super Fuel
 uf6                                               ([no block])                                                                     = Uranium Hexafluoride
 puf6                                              ([no block])                                                                     = Plutonium Hexafluoride
-sas3                                              ([no block])                                                                     = Schrabidium Trisulfide
+sas3                                              ([no block])                                                                     = Schraderbraumium Trisulfide
 amat                                              ([no block])                                                                     = Antimatter
-aschrab                                           ([no block])                                                                     = Antischrabidium
+aschrab                                           ([no block])                                                                     = Antischraderbraumium
 acid                                              ([no block])                                                                     = Hydrogen Peroxide
 solvent                                           ([no block])                                                                     = Solvent
 radiosolvent                                      ([no block])                                                                     = High-Performance Solvent
@@ -932,7 +932,7 @@ wastegas                                          ([no block])                  
 toxic_fluid                                       (hbm:toxic_block)                                                                = Sellaline
 radwater_fluid                                    (hbm:radwater_block)                                                             = Radiated Water
 mud_fluid                                         (hbm:mud_block)                                                                  = Oxidized Watz Mud
-schrabidic                                        (hbm:schrabidic_block)                                                           = Schrabidic Acid
+schrabidic                                        (hbm:schrabidic_block)                                                           = Schradibic Acid
 corium_fluid                                      (hbm:corium_block)                                                               = Corium
 volcanic_lava_fluid                               (hbm:volcanic_lava_block)                                                        = Volcanic Lava
 xpjuice                                           ([no block])                                                                     = Liquid XP

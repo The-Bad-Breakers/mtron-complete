@@ -690,7 +690,11 @@
   "metaitem.dustSalt_-1806993799": true,
   "metaitem.dustOsmium_786917311": true,
   "metaitem.dustOsmium_1437399492": true,
-  "metaitem.dustSulfur_748693351": true
+  "metaitem.dustSulfur_748693351": true,
+  "item.powder_aluminium_690653022": true,
+  "item.powder_aluminium_-1652464999": true,
+  "metaitem.dustThorium_2016678260": true,
+  "metaitem.dustThorium_-968400167": true
  },
  "extractor": {
   "item.coal_764578481": true,
