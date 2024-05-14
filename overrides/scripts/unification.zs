@@ -2,6 +2,8 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemDefinition;
 
+print("I'm ready to fix good.");
+
 // defines some arrays for with to looping
 
 // all shapes of materials that can be in
@@ -15,19 +17,29 @@ val nuclear = ["Uranium", "Thorium", "Plutonium", "Americium", "Thorium230", "Th
 
 
 
-// converts entries for aluminum and constantant into aluminium and cupronickel !!
+// converts entries for aluminum and constantan into aluminium and cupronickel !!
 for form in forms {
 	val aluminum = oreDict[form ~ "Aluminum"];
 	val aluminium = oreDict[form ~ "Aluminium"];
 	
-	aluminium.addAll(aluminum);
-	aluminum.removeItems(aluminum.items);
+	for item in aluminum.items
+	{
+		recipes.replaceAllOccurences(item, aluminium);
+		mods.jei.JEI.removeAndHide(item);
+		aluminum.remove(item);
+		aluminium.add(item);
+	}
 	
 	val constantan = oreDict[form ~ "Constantan"];
 	val cupronickel = oreDict[form ~ "Cupronickel"];
 	
-	cupronickel.addAll(constantan);
-	constantan.removeItems(constantan.items);
+	for item in constantan.items
+	{
+		recipes.replaceAllOccurences(item, cupronickel );
+		mods.jei.JEI.removeAndHide(item);
+		constantan.remove(item);
+		cupronickel.add(item);
+	}
 }
 
 
@@ -44,7 +56,7 @@ for form in forms {
 			val oreDictEntry = oreDict[form ~ material];
 			for item in oreDictEntry.items
 			{
-				if (item.owner != "gregtech")
+				if (item.definition.owner != "gregtech")
 				{
 					recipes.replaceAllOccurences(item, oreDictEntry);
 					mods.jei.JEI.removeAndHide(item);
@@ -62,7 +74,7 @@ for form in forms {
 			val oreDictEntry = oreDict[form ~ nuclearmaterial];
 			for item in oreDictEntry.items
 			{
-				if (item.owner != "hbm")
+				if (item.definition.owner != "hbm")
 				{
 					recipes.replaceAllOccurences(item, oreDictEntry);
 					mods.jei.JEI.removeAndHide(item);

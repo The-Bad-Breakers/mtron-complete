@@ -694,7 +694,8 @@
   "item.powder_aluminium_690653022": true,
   "item.powder_aluminium_-1652464999": true,
   "metaitem.dustThorium_2016678260": true,
-  "metaitem.dustThorium_-968400167": true
+  "metaitem.dustThorium_-968400167": true,
+  "item.immersiveintelligence.material.dust_salt_-567044286": true
  },
  "extractor": {
   "item.coal_764578481": true,
