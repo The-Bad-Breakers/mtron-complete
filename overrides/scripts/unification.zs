@@ -9,18 +9,18 @@ print("I'm ready to fix good.");
 // all shapes of materials that can be in
 val forms as string[] = ["ore", "ingot", "block", "nugget", "dust", "dustSmall", "dustTiny", "chunk", "plate", "gear", "rod", "stick"];
 
-// materials to unify
-val materials as string[] = ["Iron", "Gold", "Copper", "Tin", "Silver", "Lead", "Nickel", "Platinum", "Zinc", "Aluminium", "Chromium", "Chrome", "Iridium", "Osmium", "Bronze", "Steel", "Brass", "Invar", "Electrum", "Cupronickel", "Cobalt"];
+// materials to unify into is GREG
+val materialsGreg as string[] = ["Iron", "Gold", "Copper", "Tin", "Silver", "Lead", "Nickel", "Platinum", "Zinc", "Aluminium", "Chromium", "Chrome", "Iridium", "Osmium", "Bronze", "Steel", "Brass", "Invar", "Electrum", "Cupronickel", "Cobalt", "Titanium", "Boron", "Manganese"];
 
 // these ones should become into HBM !!
-val nuclear = ["Uranium", "Thorium", "Plutonium", "Americium", "Thorium230", "Thorium232", "Uranium233", "Uranium235", "Uranium238", "Plutonium239", "Plutonium241", "Americium241", "Americium242"] as string[];
+val materialsHbm as string[] = ["Lithium", "Zirconium", "Uranium", "Thorium", "Plutonium", "Americium", "Thorium230", "Thorium232", "Uranium233", "Uranium235", "Uranium238", "Plutonium239", "Plutonium241", "Americium241", "Americium242"];
 
 
 
 // converts entries for aluminum and constantan into aluminium and cupronickel !!
 for form in forms {
-	val aluminum = oreDict[form ~ "Aluminum"];
-	val aluminium = oreDict[form ~ "Aluminium"];
+	var aluminum = oreDict[form ~ "Aluminum"];
+	var aluminium = oreDict[form ~ "Aluminium"];
 	
 	recipes.replaceAllOccurences(aluminum, aluminium);
 	for item in aluminum.items
@@ -31,13 +31,13 @@ for form in forms {
 		aluminium.add(item);
 	}
 	
-	val constantan = oreDict[form ~ "Constantan"];
-	val cupronickel = oreDict[form ~ "Cupronickel"];
+	var constantan = oreDict[form ~ "Constantan"];
+	var cupronickel = oreDict[form ~ "Cupronickel"];
 	
 	recipes.replaceAllOccurences(constantan, cupronickel);
 	for item in constantan.items
 	{
-		recipes.replaceAllOccurences(item, cupronickel );
+		recipes.replaceAllOccurences(item, cupronickel);
 		mods.jei.JEI.removeAndHide(item);
 		constantan.remove(item);
 		cupronickel.add(item);
@@ -48,37 +48,29 @@ for form in forms {
 
 // iterates over each ore dictionary entry constructed from the arrays
 for form in forms {
-	for material in materials
+	for material in materialsGreg
 	{
-		print("checking for entry " ~ form ~ material);
-		
-		//checks if entry exists
 		if (oreDict has form ~ material)
 		{
-			val oreDictEntry = oreDict[form ~ material];
-			for item in oreDictEntry.items
+			for item in oreDict[form ~ material].items
 			{
+				recipes.replaceAllOccurences(item, oreDict[form ~ material]);
 				if (item.definition.owner != "gregtech")
 				{
-					recipes.replaceAllOccurences(item, oreDictEntry);
 					mods.jei.JEI.removeAndHide(item);
 				}
 			}
 		}
 	}
-	for nuclearmaterial in nuclear
+	for nuclearmaterial in materialsHbm
 	{
-		print("checking for entry " ~ form ~ nuclearmaterial);
-		
-		//checks if entry exists
 		if (oreDict has form ~ nuclearmaterial)
 		{
-			val oreDictEntry = oreDict[form ~ nuclearmaterial];
-			for item in oreDictEntry.items
+			for item in oreDict[form ~ nuclearmaterial].items
 			{
+				recipes.replaceAllOccurences(item, oreDict[form ~ nuclearmaterial]);
 				if (item.definition.owner != "hbm")
 				{
-					recipes.replaceAllOccurences(item, oreDictEntry);
 					mods.jei.JEI.removeAndHide(item);
 				}
 			}

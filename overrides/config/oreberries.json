@@ -37,12 +37,10 @@
     "color": "#EEFFFF",
     "tooltip": "White Chocolate",
     "oredictNames": [
-      "nuggetAluminum",
       "nuggetAluminium"
     ],
     "smeltingResult": {
       "ingotNames": [
-        "ingotAluminum",
         "ingotAluminium"
       ]
     },
