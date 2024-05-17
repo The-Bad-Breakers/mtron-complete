@@ -21,16 +21,6 @@ recipes.addShapeless(<contenttweaker:bag_meth>, [<ore:dustSmallCrystalMeth>, <or
 
 recipes.addShapeless(<contenttweaker:breaking_bad>, [<contenttweaker:bag_meth>, <harvestcraft:cookedtofaconitem>]);
 
-recipes.addShaped(<contenttweaker:greg_meth>, [
-[<ore:dustNeutronium>, <ore:dustNeutronium>, <ore:dustNeutronium>],
-[<ore:dustNeutronium>, <ore:dustCrystalMeth>, <ore:dustNeutronium>],
-[<ore:dustNeutronium>, <ore:dustNeutronium>, <ore:dustNeutronium>]]);
-
-recipes.addShaped(<contenttweaker:bag_greg_meth>, [
-[<ore:foilPlastic>, <ore:foilPlastic>, <ore:foilPlastic>],
-[<ore:foilPlastic>, <contenttweaker:greg_meth>, <ore:foilPlastic>],
-[<ore:foilPlastic>, <ore:foilPlastic>, <ore:foilPlastic>]]);
-
 <recipemap:chemical_bath>.recipeBuilder()
     .inputs([<ore:skullWitherSkeleton>])
 	.fluidInputs([
